@@ -12,6 +12,9 @@ pub struct PlatformSpecific {
 
     /// Whether show or hide the window icon in the taskbar.
     pub skip_taskbar: bool,
+
+    /// Window shadow
+    pub undercorated_shadow: bool,
 }
 
 impl Default for PlatformSpecific {
@@ -20,6 +23,7 @@ impl Default for PlatformSpecific {
             parent: None,
             drag_and_drop: true,
             skip_taskbar: false,
+            undercorated_shadow: false,
         }
     }
 }
